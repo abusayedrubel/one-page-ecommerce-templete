@@ -67,10 +67,10 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text">
                       <div class="dropdown">
-                          <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" data-target="#middleHeaderId" >
+                          <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown">
                             <i class="fas fa-bars"></i> All Categories
                           </a>
-                          <div class="dropdown-menu" id="middleHeaderId">
+                          <div class="dropdown-menu" id="dropdownMenuButton">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
@@ -78,7 +78,7 @@
                         </div>
                   </span>
                 </div>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control">
                 <div class="input-group-append">
                   <span class="input-group-text">.00</span>
                 </div>
@@ -94,25 +94,22 @@
       </div>
     </div>
     <div class="main-menu">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg m-0 p-0 navbar-dark">
         <div class="container">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="collapse navbar-collapse font-weight-bold" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <li class="nav-item">
+                <a class="nav-link text-dark active" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link text-dark" href="#">Features</a>
               </li>
             </ul>
           </div>
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand text-light header-cart font-weight-bold" href="#">Cart Item <i class="fas fa-shopping-cart"></i> <span class="badge badge-pill badge-warning">0</span></a>
         </div>
       </nav>
     </div>

@@ -1,0 +1,17 @@
+
+
+
+/* Header Middle Part */
+.middle-header .custom-border, .my-account{
+  border: 1px solid black;
+  border-radius: 10em;
+}
+
+
+.icon-custom{
+  padding: 5px;
+  border: 1px solid #ffca04;
+  background: #ffca04;
+  border-radius: 30px;
+  font-size: 30px;
+}

@@ -35,6 +35,11 @@
 }
 
 /* Slider */
+#slider{
+  background: #DBA401;
+  padding-bottom: 70px;
+}
+
 #slider .carousel-caption {
   top: 45%;
   transform: translateY(-50%);
@@ -77,7 +82,7 @@
   border-radius: 50%;
 }
 
-#slider .read-more
+.read-more
 {
   border:1px solid #121212;
   font-size: 16px;
@@ -117,4 +122,33 @@
   height: 15px;
   border:1px solid #ffffff;
   border-radius: 50%;
+}
+
+/* Banner */
+#banner{
+  margin-top: -70px;
+}
+#banner .banner1{
+  background: url('../images/salebanner1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 550px;
+}
+#banner .banner2{
+  background: url('../images/salebanner2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 250px;
+}
+#banner .banner3{
+  background: url('../images/salebanner3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 250px;
+}
+#banner .banner4{
+  background: url('../images/salebanner4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 250px;
 }

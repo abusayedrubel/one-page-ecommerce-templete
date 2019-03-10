@@ -230,6 +230,20 @@
   background-color:#fff;
 }
 
+
+/*All Products*/
+#all-products{
+  background: #f8f6f7;
+}
+
+#all-products ul li:hover{
+  border-top: 2px solid #121212;
+}
+
+.tabOpen{
+  display: none;
+}
+
 /*Media*/
 @media only screen and (max-width: 576px) {
   

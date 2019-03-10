@@ -152,3 +152,77 @@
   background-repeat: no-repeat;
   min-height: 250px;
 }
+
+/*New Collection*/
+.section-title{
+  letter-spacing: 1px;
+  color: #121212;
+  font-family: "Fjalla One";
+}
+.section-title h3:before{
+  content: "";
+  background-color:#121212;
+  width: 70px;
+  height: 3px;
+  position: absolute;
+  margin-left: -91px;
+  margin-top: 21px;
+}
+.section-title h3:after{
+  content: "";
+  background-color:#121212;
+  width: 70px;
+  height: 3px;
+  position: absolute;
+  margin-left:23px;
+  margin-top: 21px;
+}
+
+#new-collection .card a.button{
+  text-indent: -9999px;
+  background: #121212 url('../images/carticon.png') center no-repeat;
+  border: 3px solid #fff;
+  display: block;
+  margin: -40px auto 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  position: relative;
+}
+#new-collection .product-sale{
+  position: absolute;
+  background-color: #121212;
+  padding: 8px 5px;
+  font-size:12px;
+  transform: rotate(-45deg);
+}
+.product-sale:before
+{
+  content: "";
+  border-bottom: 35px solid #121212;
+  border-left: 25px solid transparent;
+  position: absolute;
+  left: -24px;
+  top: -1px;
+}
+.product-sale:after
+{
+  content: "";
+  border-bottom: 35px solid #121212;
+  border-right: 25px solid transparent;
+  position: absolute;
+  left: 32px;
+  top: -1px;
+}
+
+/*Media*/
+@media only screen and (max-width: 600px) {
+  
+  .section-title h3:before{
+    display: none
+  }
+  .section-title h3:after{
+    display: none
+  }
+}

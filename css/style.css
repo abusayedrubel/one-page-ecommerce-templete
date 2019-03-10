@@ -154,12 +154,12 @@
 }
 
 /*New Collection*/
-.section-title{
+.collection-title, .categories-title{
   letter-spacing: 1px;
   color: #121212;
   font-family: "Fjalla One";
 }
-.section-title h3:before{
+.collection-title h3:before, .categories-title h3:before{
   content: "";
   background-color:#121212;
   width: 70px;
@@ -168,7 +168,7 @@
   margin-left: -91px;
   margin-top: 21px;
 }
-.section-title h3:after{
+.collection-title h3:after, .categories-title h3:after{
   content: "";
   background-color:#121212;
   width: 70px;
@@ -216,13 +216,27 @@
   top: -1px;
 }
 
+/*Top Categories*/
+#top-categories{
+  background: #121212;
+}
+.categories-title{
+  color: #fff;
+}
+.categories-title h3:before{
+  background-color:#fff;
+}
+.categories-title h3:after{
+  background-color:#fff;
+}
+
 /*Media*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
   
-  .section-title h3:before{
+  .collection-title h3:before, .categories-title h3:before{
     display: none
   }
-  .section-title h3:after{
+  .collection-title h3:after, .categories-title h3:after{
     display: none
   }
 }

@@ -264,7 +264,7 @@
 }
 
 /*Category*/
-#top-categories .card{
+#top-categories .card, #partner .card{
   border-radius: 50%;
   position: relative;
   overflow: hidden;

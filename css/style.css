@@ -253,20 +253,38 @@
 
 #top-categories .card h5.card-title-custom{
   position: absolute;
-    bottom: 37px;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 52px;
-    width: 100%;
-    opacity: 0.8;
-    left: 0;
-    background-color: #e7b614;
-    font-size: 17px;
-    letter-spacing: 2px;
-    color: #121212;
-    font-family: "Fjalla One";
-    text-align: center;
-    padding: 10px 0;
+  bottom: 20px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 52px;
+  width: 100%;
+  opacity: 0.8;
+  left: 0;
+  background-color: #e7b614;
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: #121212;
+  font-family: "Fjalla One";
+  text-align: center;
+  padding: 10px 0;
 }
+
+#top-categories .owl-prev {
+  position: absolute;
+  bottom: 45%;
+  left: -30px;
+  border-radius: 50%;
+  background-color: #ffca04;
+  font-size: 40px;
+}
+#top-categories .owl-next {
+  position: absolute;
+  bottom: 45%;
+  right: -30px;
+  border-radius: 50%;
+  background-color: #ffca04;
+  font-size: 40px;
+}
+
 
 /*Media*/
 @media only screen and (max-width: 576px) {

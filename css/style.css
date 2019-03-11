@@ -244,6 +244,30 @@
   display: none;
 }
 
+/*Category*/
+#top-categories .card{
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+#top-categories .card h5.card-title-custom{
+  position: absolute;
+    bottom: 37px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 52px;
+    width: 100%;
+    opacity: 0.8;
+    left: 0;
+    background-color: #e7b614;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #121212;
+    font-family: "Fjalla One";
+    text-align: center;
+    padding: 10px 0;
+}
+
 /*Media*/
 @media only screen and (max-width: 576px) {
   

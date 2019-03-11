@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="css/all.css">
+  <!-- OWL Carousel -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Custom Style -->
@@ -351,7 +354,13 @@
         </div>
         <div class="row">
           <div class="col-12">
-            
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="card">
+                  
+                </div>
+              </div>
+          </div>
           </div>
         </div>
       </div>
@@ -856,6 +865,7 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/all.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
 
   <!-- Custom Scripts -->
   <script>
@@ -874,6 +884,23 @@
     }
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
+
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:5
+          }
+      }
+  })
   </script>
 </body>
 </html>

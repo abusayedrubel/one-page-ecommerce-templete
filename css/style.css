@@ -232,7 +232,7 @@
 
 
 /*All Products, Best Seller*/
-#all-products, #best-seller{
+#all-products, #best-seller, #banner2{
   background: #f8f6f7;
 }
 
@@ -242,6 +242,14 @@
 
 #all-products .tabOpen, #best-seller .tabOpenBest{
   display: none;
+}
+
+/*Banner 2*/
+#banner2 .left-part{
+  background: url('../images/salebanner5.jpg');
+}
+#banner2 .right-part{
+  background: url('../images/salebanner6.jpg');
 }
 
 /*Best Seller Only*/

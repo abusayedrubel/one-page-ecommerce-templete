@@ -154,12 +154,12 @@
 }
 
 /*New Collection*/
-.collection-title, .categories-title, .best-seller-title, .latest-news-title{
+.collection-title, .categories-title, .best-seller-title, .latest-news-title, .latest-news-card-title{
   letter-spacing: 1px;
   color: #121212;
   font-family: "Fjalla One";
 }
-.collection-title h3:before, .categories-title h3:before, .best-seller-title h3:before, .latest-news-title h3:before{
+.collection-title h3:before, .categories-title h3:before, .best-seller-title h3:before, .latest-news-title h3:before, .latest-news-card-title p:before{
   content: "";
   background-color:#121212;
   width: 70px;
@@ -168,7 +168,7 @@
   margin-left: -91px;
   margin-top: 21px;
 }
-.collection-title h3:after, .categories-title h3:after, .best-seller-title h3:after, .latest-news-title h3:after{
+.collection-title h3:after, .categories-title h3:after, .best-seller-title h3:after, .latest-news-title h3:after, .latest-news-card-title p:after{
   content: "";
   background-color:#121212;
   width: 70px;
@@ -304,18 +304,34 @@
   font-size: 40px;
 }
 
+/*Latest News*/
+.latest-news-card-title{
+  letter-spacing: 0px;
+}
+.latest-news-card-title p:before{
+  width: 35px;
+  height: 3px;
+  margin-left: -51px;
+}
+.latest-news-card-title p:after{
+  width: 35px;
+  height: 3px;
+  position: absolute;
+  margin-left:15px;
+}
+
 
 /*Media*/
 @media only screen and (max-width: 576px) {
   
-  .collection-title h3:before, .categories-title h3:before, .best-seller-title h3:before{
+  .collection-title h3:before, .categories-title h3:before, .best-seller-title h3:before, .latest-news-title h3:before{
     display: none
   }
-  .collection-title h3:after, .categories-title h3:after, .best-seller-title h3:after{
+  .collection-title h3:after, .categories-title h3:after, .best-seller-title h3:after, .latest-news-title h3:after{
     display: none
   }
 
-  #best-seller .card{
+  #best-seller .card, #latest-news .card{
     text-align: center;
   }
 }

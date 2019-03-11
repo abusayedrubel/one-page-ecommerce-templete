@@ -385,6 +385,68 @@
       </div>
     </div>
 
+    <!-- Best Seller -->
+    <section id="best-seller">
+      <div class="container">
+        <div class="best-seller-title text-center py-2">
+          <h3 class="text-uppercase font-weight-bold">
+            Best Seller
+          </h3>
+        </div>
+
+        <div class="lists text-center tab">
+          <ul class="list-inline">
+            <li class="list-inline-item p-2 m-2 text-dark text-muted tablinks" onclick="bestProducts(event, 'all-best-seller')" id="defaultOpenBest">All</li>
+            <li class="list-inline-item p-2 m-2 text-dark text-muted tablinks" onclick="bestProducts(event, 'fashion')" >Fashion</li>
+            <li class="list-inline-item p-2 m-2 text-dark text-muted tablinks" onclick="bestProducts(event, 'furniture')" >Furniture</li>
+            <li class="list-inline-item p-2 m-2 text-dark text-muted tablinks" onclick="bestProducts(event, 'electronics')" >Electronics</li>
+            <li class="list-inline-item p-2 m-2 text-dark text-muted tablinks" onclick="bestProducts(event, 'shoes')" >Shoes</li>
+          </ul>
+        </div>
+
+        <div id="all-best-seller" class="tabOpenBest">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card p-2 mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-5">
+                      <div class="product-sale d-block font-weight-bold text-dark">
+                          <div class="on-sale">Sale</div>
+                        </div>
+                    <img src="images/new-collection1.jpg" class="card-img img-fluid h-100 w-100" alt="...">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="" class="card-text text-dark text-decoration-none">Product Name</a></h5>
+                      <p class="card-text text-muted"><del>&#163;120 </del> &#163;99</p>
+                      <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, eveniet?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card p-2 mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-5">
+                    <img src="images/new-collection2.jpg" class="card-img img-fluid h-100 w-100" alt="...">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="" class="card-text text-dark text-decoration-none">Product Name</a></h5>
+                      <p class="card-text text-muted"><del>&#163;120 </del> &#163;99</p>
+                      <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, eveniet?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!--All Products Tabs-->
     <section id="all-products" class="pt-5">
       <div class="container">
@@ -888,6 +950,7 @@
 
   <!-- Custom Scripts -->
   <script>
+    // Scripts for All products
     function openProducts(evt, productsName) {
       var i, tabOpen, tablinks;
       tabOpen = document.getElementsByClassName("tabOpen");
@@ -903,6 +966,24 @@
     }
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
+
+    // Scripts for Best Seller
+    function bestProducts(evt, productsName) {
+          var i, tabOpenBest, tablinks;
+          tabOpenBest = document.getElementsByClassName("tabOpenBest");
+          for (i = 0; i < tabOpenBest.length; i++) {
+            tabOpenBest[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(productsName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpenBest").click();
+    
 
     $('.owl-carousel').owlCarousel({
       loop:true,

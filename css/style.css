@@ -154,12 +154,12 @@
 }
 
 /*New Collection*/
-.collection-title, .categories-title{
+.collection-title, .categories-title, .best-seller-title{
   letter-spacing: 1px;
   color: #121212;
   font-family: "Fjalla One";
 }
-.collection-title h3:before, .categories-title h3:before{
+.collection-title h3:before, .categories-title h3:before, .best-seller-title h3:before{
   content: "";
   background-color:#121212;
   width: 70px;
@@ -168,7 +168,7 @@
   margin-left: -91px;
   margin-top: 21px;
 }
-.collection-title h3:after, .categories-title h3:after{
+.collection-title h3:after, .categories-title h3:after, .best-seller-title h3:after{
   content: "";
   background-color:#121212;
   width: 70px;
@@ -190,7 +190,7 @@
   padding: 0;
   position: relative;
 }
-#new-collection .product-sale{
+.product-sale{
   position: absolute;
   background-color: #121212;
   padding: 8px 5px;
@@ -231,17 +231,28 @@
 }
 
 
-/*All Products*/
-#all-products{
+/*All Products, Best Seller*/
+#all-products, #best-seller{
   background: #f8f6f7;
 }
 
-#all-products ul li:hover{
+#all-products ul li:hover, #best-seller ul li:hover{
   border-top: 2px solid #121212;
 }
 
-.tabOpen{
+#all-products .tabOpen, #best-seller .tabOpenBest{
   display: none;
+}
+
+/*Best Seller Only*/
+.product-sale{
+  background-color: #ffca04;
+}
+.product-sale:before{
+  border-bottom: 35px solid #ffca04;
+}
+.product-sale:after{
+  border-bottom: 35px solid #ffca04;
 }
 
 /*Category*/
@@ -294,5 +305,9 @@
   }
   .collection-title h3:after, .categories-title h3:after{
     display: none
+  }
+
+  #best-seller .card{
+    text-align: center;
   }
 }

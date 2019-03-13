@@ -232,7 +232,7 @@
 
 
 /*All Products, Best Seller*/
-#all-products, #best-seller, #banner2{
+#all-products, #best-seller, #banner2, #deals-row{
   background: #f8f6f7;
 }
 
@@ -337,6 +337,10 @@ span.nofont {
   font-size: 13px;
 }
 
+#deals-row{
+  margin-top: -50px;
+}
+
 
 /*Media*/
 @media only screen and (max-width: 576px) {
@@ -350,5 +354,9 @@ span.nofont {
 
   #best-seller .card, #latest-news .card{
     text-align: center;
+  }
+
+  .numbers{
+    width: 50%;
   }
 }

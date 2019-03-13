@@ -341,6 +341,16 @@ span.nofont {
   margin-top: -50px;
 }
 
+/*Testimonial*/
+#testimonial li:hover{
+  border: 2px solid #ffca04;
+  border-radius: 50%;
+}
+#testimonial .nav-custom{
+  width: 130px;
+}
+
+
 
 /*Media*/
 @media only screen and (max-width: 576px) {

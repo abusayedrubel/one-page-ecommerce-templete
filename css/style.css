@@ -321,7 +321,7 @@
 }
 
 /*Deals*/
-#deals{
+#deals, #footer{
   background: url('../images/weekly-dealbg.jpg');
   background-attachment: fixed;
   background-size: cover;
@@ -348,6 +348,10 @@ span.nofont {
 }
 #testimonial .nav-custom{
   width: 130px;
+}
+
+#footer{
+  background: url('../images/footerbg.jpg');
 }
 
 

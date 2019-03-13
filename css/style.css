@@ -327,7 +327,15 @@
   background-size: cover;
 }
 
+.numbers{
+  width:130px;
+  font-size: 30px;
+  background-color: #ffca04;
+}
 
+span.nofont {
+  font-size: 13px;
+}
 
 
 /*Media*/

@@ -354,6 +354,19 @@ span.nofont {
   background: url('../images/footerbg.jpg');
 }
 
+#footer h1, ul{
+  opacity: 0.5;
+}
+#footer ul li{
+  border-bottom: 1px solid #fff;
+  opacity: 0.5;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+#footer ul .active{
+  color: #ffdd59;
+}
+
 
 
 /*Media*/
